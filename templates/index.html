@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html >
+   <head>
+      <meta charset="UTF-8">
+      <title>Flask for DS</title>
+      <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+   </head>
+   <body>
+      <img src="{{ url_for('static', filename='intellquest.png') }}">
+      <h4>Basic input, dropdown and output functionality :</h4>
+      <div class="container-fluid">
+         <form action ="/run" method="post" enctype="multipart/form-data">
+            <div class="row">
+               <select class="func-list" id="function_list" name="function_list" title="Select function">
+               {% for func in func_list %}
+               <option {% if (selected_func== func) %} selected {% endif %} value={{func}}>{{func}}</option>
+               {% endfor %}
+               </select>
+         <form action="/run">
+         <button type="submit">Run</button>
+         </form>
+         <div class="col">
+         <textarea class="form-control" name="input_box" id="input_box" rows="4"
+            placeholder="Enter the number">{{ input_text }}</textarea>
+         <textarea class="form-control input" name="output_box" id="output_box" rows="4"
+            placeholder="output will be printed here..">{{ output_text }}</textarea>
+         </div>
+         </div>
+         </form>
+      </div>
+   </body>
+</html>

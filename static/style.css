@@ -1,0 +1,11 @@
+textarea{
+border:1.5px solid #097aea !important;
+}
+textarea.form-control.input{
+border:1.5px solid #097aea !important;
+}
+select.func-list{
+width : 20%;
+height : 30%;
+margin-bottom : 10px;
+}
