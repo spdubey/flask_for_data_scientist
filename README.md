@@ -1,29 +1,43 @@
 # flask_for_data_scientist
-Quick Intro about blog :
-I am writing this blog as I am someone who learnt data science through certifications/videos etc. And I do not have computer science back ground due to which if there is any tool then I have to learn it or understand it in data sciency way and what I mean by that is if there is a task I try to understand the purpose of it and then piece all the component together. I am going to follow the same approach in this blog.
 
-PS: As I told I am not from CS background I do not use very technical terms, rather try to understand the logic and purpose behind it. I am also assuming that people reading this blog is aware of basic python syntax. I am going to demo/explain a very basic app and how you can connect different component of a flask app. If you want me to do a more complicated app with multiple page and functionality let me know.
+### Introduction :  
+This blog is coming from someone who has learnt data science through videos , tutorials, certification courses etc. Not having a computer science background, if there is any tool I have wanted to learn or understand , I have always done it from a data sciency way ; starts with understanding the purpose followed by putting all the build components together. And this is very much the approach that would be followed in our blogs.
+I do use technical jargons  very much, rather get along the logic and purpose behind the solutions.
 
-What we will try to achieve :
-An app which will have an input text box, a drop down(with two function square root and cube root) selection and an output box.
-Output will contain the text you entered in input box all converted into lower case and along with square root or cube root of the 5. I know it might not make sense but the idea here is to understand how you can take input, process them and apply a function to it and show them on your web page. Instead of number converting to square or cube can be replaced with any ML model depending on use case.
+### Pre- Requisite :  
+Basic Python  - Ah! Long time since you last used it ?? Don’t you worry, you can refer this <link - coming soon> to have a quick and short refresher's course.
+### What are we trying to achieve ?  
+I am going to demo/explain a very basic app and how can we connect different components of a flask app. In case we want to do some mind goggling and hit a more complicated app with complex features, please comment and I will definitely try to come up with another blog on this. So make sure you add in your reviews and comments, guys!
 
-How does a Flask app look in its structure :
+### Design:
+#### We will have an app with:
+  - One Input Text Box : User can input the data – here any number  
+  - A Dropdown – having values : square root and cube root for selection  
+  - One Output Box : Depending on the value selected in the above Dropdown, this displays the calculated output.  
+
+This might not make sense but the idea here is to understand how we can input a data, transform or apply any functions on it and display the output on a web page. Instead of this use case of getting a square or cube root of a number, we can have any ML models depending on different types of use cases.
+
+
+**Just a Thought** : I have created this example with bare minimum requirement. When I started learning about how one  can create an aesthetically appealing UI using Flask, I came across multiple hurdles , one of them was  JavaScript. I had never used JavaScript earlier but as I started digging deeper, I managed to  incorporate JavaScript as well in the code  which will serve small functionality. Probably will create a blog on that as well. Let's focus on this app without JavaScript for now.
+
+### How does a flask app looks?
 ![Test Image 1](intro.PNG)
 
-I have created this with bare minimum requirement, when I started learning about how you can create an aesthetically 
-appealing UI using Flask. Came across multiple components and one of them was  JavaScript. Now I had never used JavaScript but as I started digging deeper, I was able to manage incorporate JavaScript as well in the code  which will serve small functionality. Probably will create a blog on that as well. Let's focus on this app without JavaScript.
-
-Unravelling the code :
-I will keep the python script(routes.py) as my base and will show simultaneously how is it connected with index.html. Below code snippet is independent of html page, it is kind of a boiler plate code.
-Similarly, in index.html we have <head> tag which includes path for style.css
-
-![Test Image 1](exp_1.PNG)
+**STEP – 1** :  Keeping python script(routes.py) as my base ,  I will show simultaneously how is it connected with index.html  
+  - Below code snippet is independent of html page, it is kind of a boiler plate code  
+  - Similarly, in index.html we have <head> tag which includes path for style.css    
+![Test Image 1](exp_1.PNG)  
+  
+**STEP – 2** :  Comparing Python to HTML Code – Here it shows how we are passing elements for our Dropdown. The UI shows our designed Dropdown
 ![Test Image 1](exp_2.PNG)
+  
+  
+**STEP – 3** :  Comparing Python to HTML Code – Here it shows how we are passing elements for our Dropdown. The UI shows our designed Dropdown
 ![Test Image 1](exp_3.PNG)
+  
+
+**STEP – 4** :  Now, our final output looks like this -
 ![Test Image 1](exp_4.PNG)
-
-
 
 
 
